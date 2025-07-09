@@ -2,7 +2,7 @@ import os
 
 from dotenv import load_dotenv
 
-from armoreddjango.settings.base import *
+from nubocore.settings.base import *
 
 SITE_ID = 1
 
@@ -10,10 +10,10 @@ load_dotenv(override=True)
 
 DEBUG = os.getenv("DEBUG")
 
-POSTGRES_DB = "armoreddjango_db"
+POSTGRES_DB = "nubocore_db"
 POSTGRES_USER = os.getenv("POSTGRES_USER")
 POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD")
-DB_HOST = "armoreddjango_db"
+DB_HOST = "nubocore_db"
 DB_PORT = os.getenv("DB_PORT", 5432)
 
 SECRET_KEY = os.getenv("SECRET_KEY")
@@ -21,10 +21,10 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 ALLOWED_HOSTS = [
     "0.0.0.0",
     "localhost",
-    # "insert your domai, armoreddjango.dinho.dev"
+    # "insert your domai, nubocore.dinho.dev"
 ]
 
-CSRF_TRUSTED_ORIGINS = ["http://localhost:8003", "http://0.0.0.0:8003", "https://armoreddjango.dinho.dev"]
+CSRF_TRUSTED_ORIGINS = ["http://localhost:8008", "http://0.0.0.0:8008", "https://nubocore.dinho.dev"]
 
 CORS_ALLOWED_ORIGINS = CSRF_TRUSTED_ORIGINS
 

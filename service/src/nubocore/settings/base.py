@@ -16,7 +16,7 @@ DEFAULT_APPS = [
 ]
 
 LOCAL_APPS = [
-    "armoreddjango",
+    "nubocore",
     "authentication",
     "utils",
 ]
@@ -39,7 +39,7 @@ MIDDLEWARE = [
     "simple_history.middleware.HistoryRequestMiddleware",
 ]
 
-ROOT_URLCONF = "armoreddjango.urls"
+ROOT_URLCONF = "nubocore.urls"
 
 REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": [
@@ -75,7 +75,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "armoreddjango.wsgi.application"
+WSGI_APPLICATION = "nubocore.wsgi.application"
 
 AUTH_USER_MODEL = "authentication.profile"
 

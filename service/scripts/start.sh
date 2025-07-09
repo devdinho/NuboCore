@@ -5,7 +5,7 @@ echo no | python src/manage.py collectstatic --noinput
 echo "✅ Coletando arquivos estáticos com sucesso!"
 
 echo "🟡 Migrando o banco de dados..."
-python src/manage.py makemigrations utils authentication armoreddjango
+python src/manage.py makemigrations utils authentication nubocore
 echo "✅ Migrando o banco de dados com sucesso!"
 python src/manage.py migrate --noinput
 
@@ -15,4 +15,4 @@ python src/manage.py shell -c "from authentication.models import Profile; \
                            email='admin@example.com', password='123', profileType=1)"
 
 cd /app/src
-gunicorn --config gunicorn_config.py armoreddjango.wsgi:application
+gunicorn --config gunicorn_config.py nubocore.wsgi:application

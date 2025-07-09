@@ -1,11 +1,11 @@
 services:
   django:
-    container_name: armoreddjango_service
+    container_name: nubocore_service
     build:
       context: ./service
       dockerfile: Dockerfile
     ports:
-      - "8003:8003"
+      - "8008:8008"
     volumes:
       - ./service:/app
     depends_on:
@@ -15,10 +15,10 @@ services:
 
   db:
     env_file: '.env'
-    container_name: armoreddjango_db
+    container_name: nubocore_db
     image: postgres:17
     environment:
-      POSTGRES_DB: armoreddjango_db
+      POSTGRES_DB: nubocore_db
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     ports: 
@@ -30,13 +30,13 @@ services:
     build:
       context: .
       dockerfile: docs/Mkdocsfile
-    container_name: armoreddjango_docs
+    container_name: nubocore_docs
     ports:
-      - "8004:8004"
+      - "8009:8009"
     volumes:
       - .:/app
     working_dir: /app
-    command: mkdocs serve --dev-addr=0.0.0.0:8004 --dirtyreload --watch /docs
+    command: mkdocs serve --dev-addr=0.0.0.0:8009 --dirtyreload --watch /docs
     restart: always
 
 volumes:

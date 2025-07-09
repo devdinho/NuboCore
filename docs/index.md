@@ -1,10 +1,10 @@
-# ArmoredDjango
+# NuboPanel
 
-## Boas vindas à documentação do ArmoredDjango
+## Boas vindas à documentação do NuboPanel
 
 ### Visão Geral
 
-ArmoredDjango é uma aplicação web baseada em Django, projetada para monitorar e gerenciar o serviço integrado ao modelo de linguagem Billlumy.
+NuboPanel é uma aplicação web baseada em Django, projetada para monitorar e gerenciar o serviço integrado ao modelo de linguagem Billlumy.
 
 ### Funcionalidades
 
@@ -15,11 +15,11 @@ ArmoredDjango é uma aplicação web baseada em Django, projetada para monitorar
 
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/devdinho/ArmoredDjango.git
+    git clone https://github.com/devdinho/NuboPanel.git
     ```
 2. Navegue até o diretório do projeto:
     ```bash
-    cd ArmoredDjango
+    cd NuboPanel
     ```
 3. Construa e inicie os contêineres Docker:
     ```bash
@@ -28,5 +28,5 @@ ArmoredDjango é uma aplicação web baseada em Django, projetada para monitorar
 
 ### Uso
 
-1. Abra seu navegador web e vá para `http://localhost:8003/` para acessar a aplicação.
-1. Abra seu navegador web e vá para `http://localhost:8004/` para acessar a documentação.
+1. Abra seu navegador web e vá para `http://localhost:8008/` para acessar a aplicação.
+1. Abra seu navegador web e vá para `http://localhost:8009/` para acessar a documentação.
